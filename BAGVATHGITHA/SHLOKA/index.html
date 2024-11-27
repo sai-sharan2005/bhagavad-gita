@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images.png">
+    <title>Shloka</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar unselectable">
+        <ul>
+            <li onclick="navClick('1')">Shloka-1</li>
+            <li onclick="navClick('2')">Shloka-2</li>
+            <li onclick="navClick('3')">Shloka-3</li>
+            <li onclick="navClick('4')">Shloka-4</li>
+            <li onclick="navClick('5')">Shloka-5</li>
+            <li onclick="navClick('6')">Shloka-6</li>
+            <li onclick="navClick('7')">Shloka-7</li>
+            <li onclick="navClick('8')">Shloka-8</li>
+            <li onclick="navClick('9')">Shloka-9</li>
+            <li onclick="navClick('10')">Shloka-10</li>
+        </ul>
+    </div>
+    <div class="container">
+    <div class="wallpaper"></div>
+    <div class="shloka1">
+        <p class="shloka-box" id="shloka-box">
+            धृतराष्ट्र उवाच |<br>
+धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः |<br>
+मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ||1||
+        </p>
+        <audio id="audPlayer" controls>
+            <source src="https://uc820fc649faaae854e3e859557a.dl.dropboxusercontent.com/cd/0/inline/Ce_qh7RACuWcZW3SyyM7Y1uc2fVEccRQ7UZispETVMPZmLxYSGP2siTgv9-R-FRhcu6RXQrkPGbJx5ToDPlsDEGUM_6D6HhDFBzSFHgrWz6axpz3A4qJcDstWDIkER58CQRpCl3-D0u6NbP9duejhMQR/file#" type="audio/mpeg"> 
+        </audio>
+        <div class="buttons">
+        <button onclick="changeText('1')">Telugu</button>
+        <button onclick="changeText('2')">English</button>
+        <button onclick="changeText('3')">Malayalam</button>
+    </div>
+    <p class="meaning-box" id="meaning-box">
+        But the person who is free from attachment and aversion, and who moves among the objects of the senses with the mind and senses under control, attains inner peace and grace.
+    </p>
+    </div>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
+</html>
