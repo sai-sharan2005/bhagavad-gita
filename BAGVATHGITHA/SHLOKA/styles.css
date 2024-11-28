@@ -19,15 +19,24 @@ body{
 }
 .meaning-box{
     font-size: 1.4vw;
-    font-weight: 700;
     color: white;
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 2vw;
+    box-shadow:rgb(0,0,0,0.4) 0  5px 5px;
+    background: rgba(80, 37, 14, 0.7);
 }
 .container{
     position: relative;
     background: url("https://images.unsplash.com/photo-1623473757643-0c63b7fe7f4d");
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,14 +47,14 @@ body{
     top: 0;
     right: 0;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     background:linear-gradient(to bottom,rgb(0,0,0,0.4),rgb(0,0,0,0.5),rgb(0,0,0,0.6),rgb(0,0,0,0.7),rgb(0,0,0,0.8));
     
 }
 .shloka1{
     position: absolute;
     width: 65vw;
-    height: 45vw;
+    height: 60vw;
     padding: 2vw;
     display: flex;
     flex-direction: column;
