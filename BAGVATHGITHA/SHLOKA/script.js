@@ -70,7 +70,7 @@ window.navClick = async function (shlokaNumber) {
   const meaningRef = ref(database, `Shloka-${shlokaNumber}/meaning`);
   const audioRef = ref(database, `Shloka-${shlokaNumber}/aud`);
   const audio1Ref = ref(database, `Shloka-${shlokaNumber}/audm`);
-  const wordtowordRef = ref(database, `Shloka-${shlokaNumber}/main`);
+  const wordtowordRef = ref(database, `Shloka-${shlokaNumber}/wordtoword`);
 
   const snapshot = await get(audioRef);
   const snapshot3 = await get(audio1Ref);
