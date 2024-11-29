@@ -70,10 +70,14 @@ window.navClick = async function (shlokaNumber) {
   const meaningRef = ref(database, `Shloka-${shlokaNumber}/meaning`);
   const audioRef = ref(database, `Shloka-${shlokaNumber}/aud`);
   const audio1Ref = ref(database, `Shloka-${shlokaNumber}/audm`);
+  const wordtowordRef = ref(database, `Shloka-${shlokaNumber}/main`);
+
   const snapshot = await get(audioRef);
   const snapshot3 = await get(audio1Ref);
   const snapshot1 = await get(mainRef);
   const snapshot2 = await get(meaningRef);
+  const snapshot4 = await get(wordtowordRef);
+
   if (snapshot.exists()) {
     const audioUrl = snapshot.val();
     document.getElementById("audPlayer").src = audioUrl;
@@ -89,6 +93,12 @@ window.navClick = async function (shlokaNumber) {
   if (snapshot1.exists()) {
     const mainText = snapshot1.val();
     document.getElementById("shloka-box").innerHTML = mainText;
+  } else {
+    console.error("No text data found.");
+  }
+  if (snapshot4.exists()) {
+    const wordtowordText = snapshot4.val();
+    document.getElementById("wordtoword-box").innerHTML = wordtowordText;
   } else {
     console.error("No text data found.");
   }
